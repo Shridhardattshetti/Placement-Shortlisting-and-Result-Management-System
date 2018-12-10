@@ -1,0 +1,37 @@
+<html>
+<body background="pic3.jpg">
+	
+<h3><a href="first.html">Home</a> <a href="rank.php">Ranking</a></h3>
+
+<div align="right">
+	<a href="first.html">Logout</a></h3>
+</div>
+<br><br><br>
+<div align="center">
+<h1>Upload Results</h1>
+	<form action="uploadresults.php" method="post">
+		<table border="0">
+				<tr>
+				<td>USN<br><br></td>
+			<td align="center"><input type="text" pattern="[A-Za-z0-9]{10}" name="usn" size="10" required /><br><br></td>
+				</tr>
+				
+				<tr>
+				<td>SGPA<br><br></td>
+				<td align="center"><input type="number" pattern="[0-9.]{1,5}" step="0.01" name="sgpa" size="10" required/><br><br></td>
+				</tr>
+				<tr>
+				<td>CGPA <br><br></td>
+				<td align="center"><input type="number" pattern="[0-9.]{1,5}" step="0.01" name="cgpa" size="10" required/><br><br></td>
+				</tr>
+				
+				<tr>
+					<td colspan="2" align="center"><input type="submit" value="Submit"/>
+					</td>
+				</tr>
+			</table>
+		</form>
+	</div>
+	</body>
+	</html>
+
